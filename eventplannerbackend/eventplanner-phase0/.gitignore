@@ -18,4 +18,4 @@ coverage/
 .pytest_cache/
 .mypy_cache/
 
-docs/EventPlanner.postman_collection.json
+docs/
