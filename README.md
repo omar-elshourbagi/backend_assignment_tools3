@@ -15,7 +15,7 @@ This is the Phase 0 implementation of the EventPlanner system, focusing on User 
 ## Tech Stack
 
 - **Backend**: FastAPI (modern Python web framework)
-- **Database**: SQLite
+- **Database**: MySQL
 - **Security**: Passlib with bcrypt for password hashing
 - **API Documentation**: Swagger/OpenAPI (built-in with FastAPI)
 - **Validation**: Pydantic for request/response validation
@@ -55,7 +55,7 @@ The server will start on `http://localhost:8000`
 
 Access the interactive API documentation at:
 \`\`\`
-http://localhost:8000/api/docs
+http://localhost:8000/docs
 \`\`\`
 
 You can test all endpoints directly from the Swagger UI interface.

@@ -1,5 +1,5 @@
 from typing import Dict, Any
-from repositories.user_repository import UserRepository
+from models.user_repository import UserRepository
 from utils import hash_password, verify_password
 
 class AuthService:

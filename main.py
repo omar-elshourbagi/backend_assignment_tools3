@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from database import init_db
 from routes import auth, health
+from routes import events
 
 # Initialize database
 init_db()
@@ -10,7 +11,7 @@ init_db()
 # Create FastAPI app
 app = FastAPI(
     title="EventPlanner Phase 0 API",
-    description="User Management - Sign up and Login",
+    description="Event Planner API - No authentication required. Pass user_id as a query parameter.",
     version="1.0.0",
     docs_url="/docs",
     openapi_url="/openapi.json"
@@ -28,6 +29,7 @@ app.add_middleware(
 # Include routers
 app.include_router(auth.router)
 app.include_router(health.router)
+app.include_router(events.router)
 
 if __name__ == "__main__":
     import uvicorn
